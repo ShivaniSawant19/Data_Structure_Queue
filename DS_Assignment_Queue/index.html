@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        fieldset{
+            padding: 25px;
+            height: 100px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Insert Data</legend>
+        <input id="name" type="text" placeholder="enter name" />
+        <input id="age" type="number" placeholder="enter age" /><br><br>
+        <button type="button" id="push" onclick="addElement()" >Push</button>
+        <button type="button" id="pull" onclick="deleteElement()">Pull</button>
+        
+
+    </fieldset>
+    <div>
+        <legend>Local Storage</legend> 
+        
+        <div id="IsOutput"></div>
+        <div class="changes">
+        
+            <label>Last Pushed : <span id="lastPushed" class="add"></span> </label>
+            <br><br>
+            <label>Last Pulled : <span id="lastPulled" class="delete"></span></label>
+        </div>
+    </div>
+
+  
+</body>
+<script src="index.js"></script>
+</html>
